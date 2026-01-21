@@ -6,6 +6,9 @@ from dataclasses import dataclass
 
 # math and logic is based off 1.21.11 Java source code
 
+# https://minecraft.wiki/w/Horse#Statistics
+INTERNAL_TO_BLOCKS_PER_SEC = 43.17
+
 
 @dataclass
 class Attribute:
@@ -22,12 +25,11 @@ def generate_jump_strength(supplier: Callable[[], float]) -> float:
     return 0.4 + supplier() * 0.2 + supplier() * 0.2 + supplier() * 0.2
 
 
+# something about this seems to be slightly off, my only guess is double (python float) vs real float in Java shenanigans
 def generate_movement_speed(supplier: Callable[[], float]) -> float:
-    # https://minecraft.wiki/w/Horse#Statistics
-    INTERNAL_TO_BLOCKS_PER_SEC = 43.17
-    return INTERNAL_TO_BLOCKS_PER_SEC * (
-        (0.45 + supplier() * 0.3 + supplier() * 0.3 + supplier() * 0.3) * 0.25
-    )
+    value = (0.45 + supplier() * 0.3 + supplier() * 0.3 + supplier() * 0.3) * 0.25
+    value *= INTERNAL_TO_BLOCKS_PER_SEC
+    return value
 
 
 def next_int(cap: int) -> int:
