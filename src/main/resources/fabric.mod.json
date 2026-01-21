@@ -1,41 +1,42 @@
 {
-	"schemaVersion": 1,
-	"id": "higher_capped_horses",
-	"version": "${version}",
-	"name": "Higher Capped Horses",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/higher_capped_horses/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"artixbtw.higher_capped_horses.HigherCappedHorses"
-		],
-		"client": [
-			"artixbtw.higher_capped_horses.HigherCappedHorsesClient"
-		],
-		"fabric-datagen": [
-			"artixbtw.higher_capped_horses.HigherCappedHorsesDataGenerator"
-		]
-	},
-	"mixins": [
-		"higher_capped_horses.mixins.json",
-		{
-			"config": "higher_capped_horses.client.mixins.json",
-			"environment": "client"
-		}
-	],
-	"depends": {
-		"fabricloader": ">=0.18.4",
-		"minecraft": "~1.21.11",
-		"java": ">=21",
-		"fabric-api": "*"
-	}
+    "schemaVersion": 1,
+    "id": "higher_capped_horses",
+    "version": "${version}",
+    "name": "Higher Capped Horses",
+    "description": "This is an example description! Tell everyone what your mod is about!",
+    "authors": [
+        "Me!"
+    ],
+    "contact": {
+        "homepage": "https://fabricmc.net/",
+        "sources": "https://github.com/FabricMC/fabric-example-mod"
+    },
+    "license": "MIT",
+    "icon": "assets/higher_capped_horses/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "artixbtw.higher_capped_horses.HigherCappedHorses"
+        ],
+        "client": [
+            "artixbtw.higher_capped_horses.HigherCappedHorsesClient"
+        ],
+        "fabric-datagen": [
+            "artixbtw.higher_capped_horses.HigherCappedHorsesDataGenerator"
+        ]
+    },
+    "mixins": [
+        "higher_capped_horses.mixins.json",
+        {
+            "config": "higher_capped_horses.client.mixins.json",
+            "environment": "client"
+        }
+    ],
+    "depends": {
+        "fabricloader": ">=0.18.4",
+        "minecraft": "~1.21.11",
+        "java": ">=21",
+        "fabric-api": "*"
+    }
 }
+
