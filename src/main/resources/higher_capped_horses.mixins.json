@@ -1,14 +1,16 @@
 {
-	"required": true,
-	"package": "artixbtw.higher_capped_horses.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"ExampleMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	},
-	"overwrites": {
-		"requireAnnotations": true
-	}
+    "required": true,
+    "package": "artixbtw.higher_capped_horses.mixin",
+    "compatibilityLevel": "JAVA_21",
+    "mixins": [
+        "AbstractHorseAccessor",
+        "AbstractHorseHigherSpeedCapMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    },
+    "overwrites": {
+        "requireAnnotations": true
+    }
 }
+
