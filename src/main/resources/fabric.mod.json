@@ -17,26 +17,14 @@
     "entrypoints": {
         "main": [
             "artixbtw.higher_capped_horses.HigherCappedHorses"
-        ],
-        "client": [
-            "artixbtw.higher_capped_horses.HigherCappedHorsesClient"
-        ],
-        "fabric-datagen": [
-            "artixbtw.higher_capped_horses.HigherCappedHorsesDataGenerator"
         ]
     },
     "mixins": [
-        "higher_capped_horses.mixins.json",
-        {
-            "config": "higher_capped_horses.client.mixins.json",
-            "environment": "client"
-        }
+        "higher_capped_horses.mixins.json"
     ],
     "depends": {
         "fabricloader": ">=0.18.4",
         "minecraft": "~1.21.11",
-        "java": ">=21",
-        "fabric-api": "*"
+        "java": ">=21"
     }
 }
-
