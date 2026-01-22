@@ -3,13 +3,13 @@
     "id": "higher_capped_horses",
     "version": "${version}",
     "name": "Higher Capped Horses",
-    "description": "This is an example description! Tell everyone what your mod is about!",
+    "description": "Ups the maximum attainable horse speed from breeding",
     "authors": [
-        "Me!"
+        "ArtixBTW"
     ],
     "contact": {
-        "homepage": "https://fabricmc.net/",
-        "sources": "https://github.com/FabricMC/fabric-example-mod"
+        "homepage": "https://github.com/ArtixBTW/higher_capped_horses",
+        "sources": "https://github.com/ArtixBTW/higher_capped_horses"
     },
     "license": "MIT",
     "icon": "assets/higher_capped_horses/icon.png",
