@@ -10,5 +10,5 @@ import net.minecraft.world.entity.animal.equine.AbstractHorse;
 public class AbstractHorseHigherSpeedCapMixin {
 	@Shadow
 	@Final
-	private static float MAX_MOVEMENT_SPEED = (float) AbstractHorseAccessor.higherCappedHorses$invokeGenerateSpeed(() -> 2.241);
+	private static final float MAX_MOVEMENT_SPEED = (float) AbstractHorseAccessor.higherCappedHorses$invokeGenerateSpeed(() -> 2.241);
 }
