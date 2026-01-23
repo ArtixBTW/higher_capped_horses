@@ -4,7 +4,8 @@
     "compatibilityLevel": "JAVA_21",
     "mixins": [
         "AbstractHorseAccessor",
-        "AbstractHorseHigherSpeedCapMixin"
+        "AbstractHorseHigherSpeedCapMixin",
+        "UseFoodOnAbstractHorseMixin"
     ],
     "injectors": {
         "defaultRequire": 1
@@ -13,4 +14,3 @@
         "requireAnnotations": true
     }
 }
-
