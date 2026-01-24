@@ -3,7 +3,7 @@
     "id": "higher_capped_horses",
     "version": "${version}",
     "name": "Higher Capped Horses",
-    "description": "Ups the maximum attainable horse speed from breeding",
+    "description": "Ups the maximum attainable horse speed from breeding & lets you heal your horse with food while riding it.",
     "authors": [
         "ArtixBTW"
     ],
