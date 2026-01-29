@@ -16,7 +16,7 @@ import net.minecraft.world.level.Level;
 @Mixin(Item.class)
 public class UseFoodOnAbstractHorseMixin {
 	@Inject(at = @At("head"), method = "use", cancellable = true)
-	public void use(
+	public void higherCappedHorses$use(
 			Level level,
 			Player player,
 			InteractionHand hand,
