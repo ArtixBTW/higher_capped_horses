@@ -1,4 +1,4 @@
-package artixbtw.higher_capped_horses;
+package dev.artixbtw.higher_capped_horses;
 
 import net.fabricmc.api.ModInitializer;
 

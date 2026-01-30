@@ -1,4 +1,4 @@
-package artixbtw.higher_capped_horses.mixin;
+package dev.artixbtw.higher_capped_horses.mixin;
 
 import java.util.function.DoubleSupplier;
 

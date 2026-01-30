@@ -16,7 +16,7 @@
     "environment": "*",
     "entrypoints": {
         "main": [
-            "artixbtw.higher_capped_horses.HigherCappedHorses"
+            "dev.artixbtw.higher_capped_horses.HigherCappedHorses"
         ]
     },
     "mixins": [
