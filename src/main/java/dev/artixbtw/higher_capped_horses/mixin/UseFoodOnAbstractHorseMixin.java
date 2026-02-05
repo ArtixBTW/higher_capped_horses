@@ -23,6 +23,9 @@ public class UseFoodOnAbstractHorseMixin {
 			CallbackInfoReturnable<InteractionResult> cir) {
 		ItemStack stack = player.getItemInHand(hand);
 		if (player.getRootVehicle() instanceof AbstractHorse abstractHorse
+				// If the horse is at full then this will let you use it on yourself,
+				// this is useful for eating food like golden carrots while on your horse
+				&& abstractHorse.getHealth() < abstractHorse.getMaxHealth()
 				&& abstractHorse.isFood(stack)) {
 			InteractionResult result = abstractHorse.fedFood(player, stack);
 			cir.setReturnValue(result);
