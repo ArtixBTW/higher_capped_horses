@@ -40,23 +40,25 @@ def next_float() -> float:
     return random.uniform(0, 1)
 
 
-MAX_HEALTH = Attribute(
+HEALTH = Attribute(
     generate_health(lambda n: 0),
     generate_health(lambda n: n - 1),
     generate_health(next_int),
 )
-print(f"Max Health: {MAX_HEALTH}")
 
 JUMP_STRENGTH = Attribute(
     generate_jump_strength(lambda: 0),
     generate_jump_strength(lambda: 1),
     generate_jump_strength(next_float),
 )
-print(f"Jump Strength: {JUMP_STRENGTH}")
 
 MOVEMENT_SPEED = Attribute(
     generate_movement_speed(lambda: 0),
     generate_movement_speed(lambda: 1.0),
     generate_movement_speed(next_float),
 )
-print(f"Movement Speed: {MOVEMENT_SPEED}")
+
+if __name__ == "main":
+    print(f"Health: {HEALTH}")
+    print(f"Jump Strength: {JUMP_STRENGTH}")
+    print(f"Movement Speed: {MOVEMENT_SPEED}")
