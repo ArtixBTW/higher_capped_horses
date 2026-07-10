@@ -21,6 +21,10 @@ public class UseFoodOnAbstractHorseMixin {
 			Player player,
 			InteractionHand hand,
 			CallbackInfoReturnable<InteractionResult> cir) {
+		// TODO: test this
+		if (level.isClientSide())
+			return;
+
 		ItemStack stack = player.getItemInHand(hand);
 		if (player.getRootVehicle() instanceof AbstractHorse abstractHorse
 				// If the horse is at full then this will let you use it on yourself,
