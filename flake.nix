@@ -12,7 +12,7 @@
       perSystem = {  pkgs, lib, ... }: let
         # needed for hot reloading
         # java = pkgs.jetbrains.jdk-no-jcef;
-        java = pkgs.jdk21;
+        java = pkgs.jdk25;
 
         nativeBuildInputs = with pkgs; [
           java
@@ -20,11 +20,29 @@
         ];
 
         buildInputs = with pkgs; [
+          ## native versions
+          glfw3-minecraft
+          openal
+
+          ## openal
+          alsa-lib
+          libjack2
+          libpulseaudio
+          pipewire
+
+          ## glfw
           libGL
-          glfw3-minecraft # Not always needed, but in case it is, it's here.
-          flite # TTS
-          libpulseaudio # Required for audio
-          udev
+          libx11
+          libxcursor
+          libxext
+          libxrandr
+          libxxf86vm
+          wayland
+          libdecor
+
+          udev # oshi
+
+          vulkan-loader
         ];
       in {
         devShells.default = pkgs.mkShell {
