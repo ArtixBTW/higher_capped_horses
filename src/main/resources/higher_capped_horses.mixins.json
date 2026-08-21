@@ -1,7 +1,7 @@
 {
     "required": true,
     "package": "dev.artixbtw.higher_capped_horses.mixin",
-    "compatibilityLevel": "JAVA_21",
+    "compatibilityLevel": "JAVA_25",
     "mixins": [
         "AbstractHorseAccessor",
         "AbstractHorseHigherSpeedCapMixin",
